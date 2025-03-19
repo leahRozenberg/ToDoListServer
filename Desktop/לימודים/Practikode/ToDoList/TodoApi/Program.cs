@@ -19,7 +19,7 @@ app.UseCors("AllowAll");
 if (app.Environment.IsDevelopment()){
 app.UseSwagger();
 app.UseSwaggerUI();
-}
+//}
 app.MapGet("/", async (ToDoDbContext Db) =>
 {
     return await Db.Items.ToListAsync();
